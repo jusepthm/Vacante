@@ -1,0 +1,124 @@
+<%- include("template/header", {tituloWeb: 'Inicio' }) %>
+
+    <h1><strong>Publicidad</strong></h1>
+
+    <div class="contenedor">
+        <div class="contenedor-vacantes">
+
+
+            <div class="card">
+
+                <img src="/resources/img/zapato.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">No subestimes el poder que unos zapatos increíbles pueden ejercer en tí. Te
+                        pueden hacer mucho más confiado, más feliz…</p>
+                    <h3><strong>Just do it</strong></h3>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img src="/resources/img/productos1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">“Dedicación para el éxito de cada cliente. Innovación que importe—a nuestra
+                        compañía y al mundo. Confianza y responsabilidad personal en todas nuestras relaciones.”</p>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img src="/resources/img/productos2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">“Dar forma al futuro del Internet con la creación de valor y oportunidad sin
+                        precedentes para nuestros clientes, empleados, inversores y ecosistema de socios.”</p>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img src="/resources/img/productos3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Porque la limpieza es necesaria.</p>
+                </div>
+            </div>
+
+        
+
+                
+                <div class="card">
+
+                    <img src="/resources/img/productos4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Es el más completo que existe en el mercado</p>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <img src="/resources/img/productos5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Multitud de gente se lo lleva</p>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <img src="/resources/img/productos6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">“A precio regalado”.…</p>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <img src="/resources/img/productos7.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">No subestimes el poder que unos zapatos increíbles pueden ejercer en tí. Te
+                            pueden hacer mucho más confiado, más feliz…</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="banner">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                            varius blandit.</p>
+                        <small>Donec id elit non mi porta.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                            varius blandit.</p>
+                        <small class="text-muted">Donec id elit non mi porta.</small>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <% if(login) { %>
+            <h1>El usuario conectado es: <strong>
+                    <%= name %>
+                </strong> </h1>
+            <a href="logout" class="a-logout">Logout</a>
+            <%} else {%>
+                <h1><strong>
+                        <%= name %>
+                    </strong></h1>
+                <a href="login" class="a-login">Ir al login</a>
+                <% } %>
+
+
+                    <%- include("template/footer") %>

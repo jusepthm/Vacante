@@ -1,0 +1,32 @@
+<%- include("template/header", {tituloWeb: 'Vacantes'})  %>
+    
+<h1>Empresas</h1> 
+<div class="container">
+<table class="table table-bordered table-striped text-center mt-4" id="tableServicios">
+    <thead>
+      <tr class="bg-primary text-white">
+        <th scope="col">Empresa</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">email</th>
+        <th scope="col">direccio</th>
+        <th scope="col">Accion</th>
+      </tr>
+    </thead>
+    <tbody id="lista">
+      <% results.forEach((user)=> { %>
+     <tr>
+       <td><%= user.nombre_empresa %></td>
+       <td><%= user.telefono_empresa %></td>
+       <td><%= user.email_empresa %></td>
+       <td><%= user.direccion_empresa %></td>
+       <td>
+        <a href="/vacanteEmpresa" class="btn btn-info">Buscar</a>
+       </td>
+     </tr>
+    <% }) %>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<%- include("template/footer")  %>

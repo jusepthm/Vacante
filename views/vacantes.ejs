@@ -1,0 +1,34 @@
+<%- include("template/header", {tituloWeb: 'Vacantes'})  %>
+    
+<h1>Vacantes disponibles</h1> 
+
+<div class="contenedor">
+<div class="contenedor-vacantes">
+  <% results.forEach((user)=> { %>
+  <div class="card" >
+    
+      <img src="/resources/img/trabajo.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="textos">
+        <h5 class="card-title"><%= user.nombreVacante %></h5>
+        <p class="card-text"><%= user.descripcion %></p>
+        <a href="#" class="btn btn-primary">Elegir vacante</a>
+      </div>
+      </div>
+    </div>
+    <% }) %>
+    
+     
+    
+
+  </div>
+  <div class="banner">
+    <img src="/resources/img/trabajopc.jpg" class="img" alt="...">
+    
+
+  </div>
+
+  
+</div>
+
+<%- include("template/footer")  %>
